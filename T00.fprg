@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="T00"/>
+        <attribute name="authors" value="LOQ"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-03 02:08:13 PM"/>
+        <attribute name="created" value="TE9RO0xBUFRPUC1VOFZUMlM5NTsyMDI1LTEwLTAxOzA4OjI0OjQ3IFBNOzI1Nzk="/>
+        <attribute name="edited" value="TE9RO0xBUFRPUC1VOFZUMlM5NTsyMDI1LTEwLTAzOzExOjQ0OjU0IEFNOzM7QVNVUztMQVBUT1AtRkwzNUVORU87MjAyNS0xMC0wMTswODoyMTo0OSBQTTtUMDBbMV0uZnByZzs2MzI3"/>
+        <attribute name="edited" value="TE9RO0xBUFRPUC1VOFZUMlM5NTsyMDI1LTEwLTAzOzAxOjU4OjQwIFBNOzE7QVNVUztMQVBUT1AtRkwzNUVORU87MjAyNS0xMC0wMTswODoyMTo0OSBQTTtUMDBbMl0uZnByZzs2MzQw"/>
+        <attribute name="edited" value="TE9RO0xBUFRPUC1VOFZUMlM5NTsyMDI1LTEwLTAzOzAyOjA4OjEzIFBNOzExOzI3Mjc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y, tambah, kali" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <if expression="x MOD 2 == 0">
+                <then>
+                    <output expression="&quot;Bilangan pertama: Genap&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Bilangan pertama: Ganjil&quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="y MOD 2 == 0">
+                <then>
+                    <output expression="&quot;Bilangan kedua: Genap&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Bilangan kedua: Ganjil&quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="x&gt;y">
+                <then>
+                    <output expression="&quot;Bilangan pertama lebih besar&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="x&lt;y">
+                        <then>
+                            <output expression="&quot;Bilangan kedua lebih besar&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Kedua bilangan sama besar&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="x mod 2 == 0 &amp;&amp; y mod 2 == 0">
+                <then>
+                    <assign variable="tambah" expression="x + y"/>
+                    <output expression="&quot;Hasil penjumlahan: &quot; &amp; tambah" newline="True"/>
+                </then>
+                <else>
+                    <if expression="x mod 2 != 0 &amp;&amp; y mod 2 != 0">
+                        <then>
+                            <assign variable="kali" expression="x * y"/>
+                            <output expression="&quot;Hasil perkalian: &quot; &amp; kali" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+            <if expression="x mod 2!=0 &amp;&amp; y mod 2==0">
+                <then>
+                    <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="y mod 2!=0 &amp;&amp; x mod 2==0">
+                        <then>
+                            <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
